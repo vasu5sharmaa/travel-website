@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRAVELERS TRIO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="travel.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://png.pngtree.com/png-vector/20190226/ourmid/pngtree-vacation-and-travel-icon-png-image_719313.jpg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <style>
+        /* Logo Styles */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 50px;
+            animation: spin 6s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            color: #ff6600;
+            font-weight: bold;
+            margin-left: 10px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo-text span {
+            color: #ff4500;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar glass" style="height: 70px">
+        <a href="#home" class="logo-container">
+            <!-- SVG Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="logo-icon">
+                <circle cx="50" cy="50" r="40" fill="#ff6600" />
+                <path d="M50 20 L60 40 L50 35 L40 40 Z" fill="#ffffff" />
+                <circle cx="50" cy="50" r="10" fill="#ffffff" />
+            </svg>
+            <!-- Logo Text -->
+            <h1 class="logo-text">TRAVELERS <span>TRIO</span></h1>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home" id="pri" class="active cir_border">Home</a></li>
+            <li><a href="#events" id="sec" class="cir_border">Events</a></li>
+            <li><a href="#explore" id="tri" class="cir_border">Explore</a></li>
+            <li><a href="#tours" id="quad" class="cir_border">Tours</a></li>
+            <li><a href="#contact" id="hept" class="cir_border">Contact</a></li>
+            <li>
+                <div>
+                    <input type="checkbox" class="checkbox dark" id="checkbox" />
+                    <label for="checkbox" class="label">
+                        <i class="fa fa-moon-o"></i>
+                        <i class="fa fa-sun-o"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn" />
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Header -->
+    <header id="home" style="background-image: url('https://www.therodinhoods.com/wp-content/uploads/2017/04/travel-industry-air.jpg'); background-size: cover; background-position: center center; height: 80vh; display: flex; justify-content: center; align-items: center; color: white;">
+        <div class="header-content">
+            <h1 id="quote">Explore the colourful World</h1>
+            <div class="line"></div>
+            <h2>A WONDERFUL GIFT</h2>
+            <a href="learn-more.html" class="ctn" onclick='removeall(); $("#quad").css("border", "4px solid whitesmoke"); $("#quad").css("border-radius", "40px");'>Learn more</a>
+        </div>
+    </header>
+    <!-- End of Header -->
+<!-- Events -->
+<section class="events" id="events" style="padding-top: 50px;">
+    <div class="container">
+        <div class="title">
+            <h1 class="dark">Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="col">
+            <!-- Event Card 1 -->
+            <article class="card col">
+                <img class="card-img" src="https://cdn.pixabay.com/photo/2010/11/29/mount-everest-413_1280.jpg" />
+                <h4 class="dark">Everest camp trek</h4>
+                <p class="font-color">
+                    Experience the thrill of trekking through the majestic Himalayas to the base of the world's highest peak. Witness breathtaking landscapes, serene monasteries, and the vibrant Sherpa culture. This challenging yet rewarding journey promises unforgettable memories for adventure seekers.
+                </p>
+                <a href="https://trekthehimalayas.com/everest-base-camp-trek" class="ctn" target="_blank" rel="noopener noreferrer">All Details</a>
+            </article>
+            <!-- Event Card 2 -->
+            <article class="card col">
+                <img class="card-img" src="https://cdn.pixabay.com/photo/2022/10/25/13/41/ladakh-7545887_640.jpg" />
+                <h4 class="dark">Walking holidays</h4>
+                <p class="font-color">
+                    Immerse yourself in nature with scenic walking holidays, exploring picturesque trails, serene countryside, and charming villages. Enjoy a slower pace, allowing time to appreciate stunning landscapes and local cultures. Ideal for relaxation, rejuvenation, and reconnecting with the outdoors.
+                </p>
+                <a href="https://www.walksworldwide.com/" class="ctn" target="_blank" rel="noopener noreferrer">All Details</a>
+            </article>
+            <!-- Event Card 3 -->
+            <article class="card col">
+                <img class="card-img" src="https://www.shutterstock.com/image-photo/radhanagar-beach-havelock-island-port-600nw-1113362690.jpg" />
+                <h4 class="dark">Andaman Beaches</h4>
+                <p class="font-color">
+                    Discover the pristine beauty of Andaman's beaches, with their crystal-clear turquoise waters, soft white sands, and lush palm-fringed shores. Perfect for relaxing, snorkeling, and witnessing vibrant marine life in its natural habitat. A serene paradise for nature lovers and adventure seekers alike.
+                </p>
+                <a href="https://www.thrillophilia.com/best-beaches-in-andaman-and-nicobar-islands" class="ctn" target="_blank" rel="noopener noreferrer">All Details</a>
+            </article>
+        </div>
+    </div>
+</section>
+<!-- End of Events -->
+
+<!-- Explore -->
+<section class="explore" id="explore" style="margin-bottom: 50px;">
+    <div class="explore-content">  
+        <h1>EXPLORE THE WORLD</h1>
+        <img src="https://www.shutterstock.com/image-vector/airplane-cloud-blue-passport-luggage-600nw-2305845281.jpg" />
+        <div class="line"></div> <br>
+        <p>
+            The world is full of breathtaking destinations waiting to be discovered. From the bustling streets of cosmopolitan cities to the tranquil beauty of remote islands, every place has a unique story to tell. Imagine standing before majestic mountains, strolling along pristine beaches, or immersing yourself in the rich heritage of ancient civilizations.</p>
+<p>
+Exploring the world allows you to connect with diverse cultures, taste incredible cuisines, and witness traditions passed down through generations. Whether you’re hiking through lush rainforests, marveling at architectural wonders, or simply enjoying a sunset in a foreign land, each experience enriches your perspective on life.
+</p>
+<p>
+Traveling broadens horizons, fuels curiosity, and leaves you with memories that last a lifetime. Whether you're seeking adventure, relaxation, or cultural immersion, the world has something for everyone. Pack your bags, follow your wanderlust, and let the journey redefine the way you see the world. <br />
+           
+        </p>
+        <a href="#" class="ctn">Explore more</a>
+    </div>
+</section>
+<!-- End of Explore -->
+
+<!-- Tours -->
+<section class="tours" id="tours" style="padding: 50px 0;">
+    <div class="container row">
+        <div class="content-col">
+            <h1 class="font-color">UPCOMING TOURS & DESTINATIONS</h1>
+            <div class="line"></div>
+            <p>
+                <strong>11th January 2025:</strong> Maldives - Discover the pristine beauty of the Maldives, with crystal-clear waters and white sandy beaches.<br />
+                <strong>12th January 2025:</strong> Tour of Veligandu Island Beach - A paradise island with lush greenery and an incredible coral reef.<br />
+                <strong>13th January 2025:</strong> Trinidad North Coast Experience - An adventure through the Caribbean, with rich culture and stunning views.<br />
+                and many more...
+            </p>
+            <div class="button-container">
+                <a href="#" class="ctn">Learn more</a>
+            </div>
+        </div>
+        <div class="image-col">
+            <div class="image-gallery">
+                <img src="https://www.theatollsofmaldives.com/wp-content/uploads/2020/12/main-2.jpg" alt="Maldives Island" />
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- End of Tours -->
+
+<!-- Contact -->
+<section id="contact">
+    <div class="title">
+        <h1 class="font-color">Contact Us</h1>
+        <div class="line"></div>
+    </div>
+    <div class="contact_us">
+        <form class="cform" action="" method="post">
+            <div class="crow-message">
+                <h1 class="color">Send us a message</h1>
+                <div></div>
+            </div>
+            <div class="crow-in">
+                <input type="text" id="name" name="name" placeholder="Your name" />
+                <input type="email" id="email" name="email" placeholder="Your Email id" />
+            </div>
+            <div class="crow">
+                <div class="ccol-left">
+                    <select name="country" id="country">
+                        <option value="India">India</option>
+                        <option value="Russia">Russia</option>
+                        <option value="USA">USA</option>
+                        <option value="Japan">Japan</option>
+                        <option value="France">France</option>
+                        <option value="Brazil">Brazil</option>
+                    </select><br>
+                    <textarea name="message" placeholder="Your Message"></textarea><br>
+                    <button type="submit" class="ctn">SEND</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- End of Contact -->
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const checkbox = document.getElementById("checkbox");
+        const body = document.body;
+        
+        checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+                body.classList.add("dark-mode");
+            } else {
+                body.classList.remove("dark-mode");
+            }
+        });
+    </script>
+    <!-- Footer -->
+<footer id="footer" style="background-color: #333; color: white; padding: 40px 0; text-align: center;">
+    <div class="footer-content">
+        <p>created by vatsal  |
+            &copy; 2024 Travelers Trio. All rights reserved.</p>
+        <p>Follow us on:</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin"></a>
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
+
+</body>
+
+</html>
